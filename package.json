@@ -1,0 +1,14 @@
+{
+  "name": "Farooq_Bot",
+  "version": "1.0.0",
+  "description": "A simple WhatsApp bot like Levanter",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "farooqbot",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}
