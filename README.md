@@ -79,7 +79,7 @@ bash <(curl -fsSL http://bit.ly/43JqREw)
 4. **Clone the Repository and Install Dependencies:**
 
    ```sh
-   git clone https://github.com/lyfe00011/farooq_bot botName
+   git clone https://github.com/farooqbot/Farooq_Bot
    cd botName
    yarn install
    ```
