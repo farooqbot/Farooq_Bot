@@ -1,4 +1,4 @@
-# WhatsApp MD User Bot
+# 🤖 Farooq_Bot 🤖
 
 A powerful and feature-rich WhatsApp bot supporting multiple sessions, designed for seamless automation and enhanced user experience.
 
@@ -9,29 +9,6 @@ A powerful and feature-rich WhatsApp bot supporting multiple sessions, designed 
 - **Automated Task Execution** – Perform actions without manual intervention.
 - **Easy Deployment** – Multiple hosting options for quick setup.
 
-### Supported Languages
-
-This bot supports multiple languages for responses. Set your preferred language using the `BOT_LANG` variable in the `config.env` file.
-
-**Available languages:**
-
-- **bn** – Bengali  
-- **en** – English  
-- **es** – Spanish  
-- **hi** – Hindi  
-- **id** – Indonesian  
-- **ur** – Urdu  
-- **tr** – Turkish  
-- **fr** – French  
-- **ru** – Russian  
-- **ar** – Arabic  
-
-To set the bot language to Spanish, add the following line to your `config.env` file:
-
-```env
-BOT_LANG=es
-```
----
 
 ### Deployment Guide
 
@@ -91,7 +68,7 @@ bash <(curl -fsSL http://bit.ly/43JqREw)
    ```sh
    SESSION_ID=your_session_id_here
    PREFIX=.
-   STICKER_PACKNAME=LyFE
+   STICKER_PACKNAME=Farooq🤍✨
    ALWAYS_ONLINE=false
    RMBG_KEY=null
    LANGUAG=en
