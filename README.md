@@ -1,4 +1,4 @@
-# 🌟 Farooq Bot 🤖
+# 🤖 Farooq Bot 🤖
 
 [![Node.js](https://img.shields.io/badge/Node.js-v18.x-6CC24A?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)  
 [![NPM](https://img.shields.io/badge/npm-v9.x-E03A3E?style=for-the-badge&logo=npm&logoColor=white)](https://www.npmjs.com/)  
