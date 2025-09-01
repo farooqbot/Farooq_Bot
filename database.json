@@ -7,7 +7,7 @@
   "version": "0.6.6",
   "filters": [
     {
-      "chat": "0000000@g.us",
+      "chat": "1234567890-111111111@g.us",
       "active": true,
       "filters": [
         {
@@ -24,7 +24,7 @@
   },
   "welcomeMessage": [
     {
-      "chat": "0000000@g.us",
+      "chat": "1234567890-111111111@g.us",
       "type": "text",
       "content": "Hello!",
       "media": ""
@@ -32,19 +32,19 @@
   ],
   "goodbyeMessage": [
     {
-      "chat": "0000000@g.us",
+      "chat": "1234567890-111111111@g.us",
       "type": "text",
       "content": "Goodbye!",
       "media": ""
     }
   ],
   "sudo": [
-    ""
+    "919876543210"
   ],
   "worktype": "private",
   "globalMutes": [
     {
-      "chat": "0000000@g.us",
+      "chat": "1234567890-111111111@g.us",
       "muted_users": []
     }
   ],
@@ -53,10 +53,10 @@
   "afkMessage": {
     "type": "text",
     "media": "",
-    "content": "_I'am currently AFK! Please contact me later._",
+    "content": "_I'm currently AFK! Please contact me later._",
     "active": false
   },
   "users": {
-    "0000000@s.whatsapp.net": "Farooq_Bot"
+    "919876543210@s.whatsapp.net": "Farooq_Bot"
   }
 }
