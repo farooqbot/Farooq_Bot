@@ -1,4 +1,4 @@
-🌟 Farooq Bot 🌟
+# 🌟 Farooq Bot 🌟
 
 Farooq Bot is your ultimate WhatsApp automation assistant 🤖. Manage groups, automate tasks, and have fun with simple commands.
 
