@@ -1,146 +1,151 @@
-# PrimonProto - WhatsApp Bot
+🌟 Farooq Bot 🌟
 
-PrimonProto is a versatile WhatsApp bot built with Node.js and the Baileys library. It offers a range of features for automation and enhanced group management, making your WhatsApp experience more efficient and enjoyable.
+Farooq Bot is your ultimate WhatsApp automation assistant 🤖. Manage groups, automate tasks, and have fun with simple commands.
 
-## Features
+🛡️ Moderation Commands
 
-**Media & Entertainment:**
+🔇 !gmute (reply to a user) – Globally mutes a user in all groups.
 
-* **Instagram Downloader:** Download photos and videos from Instagram links.
-* **TikTok Downloader:** Download TikTok videos with a simple command.
-* **YouTube Downloader:** Download YouTube videos and music in high quality.
-* **Lyrics Fetcher:** Quickly get song lyrics using the Genius API.
-* **Sticker Creator:** Convert images and stickers to different formats.
-* **View Once Message Viewer:** Reveal and download "view once" messages.
+🔊 !ungmute (reply to a user) – Globally unmutes a user.
 
-**Group Administration:**
+⚡ Automation & Utility Commands
 
-* **Group Mute/Unmute:** Control group chat activity by muting and unmuting.
-* **Ban/Add Members:** Easily ban and add users to your groups.
-* **Promote/Demote Admins:** Manage group administrators efficiently.
-* **Tag All/Admins:** Quickly tag all members or just the admins in a group.
-* **Global Mute:** Mute specific users across all groups the bot is in.
+✨ !filter add <incoming message> <outgoing message> – Add a new automated response.
 
-**Automation & Utilities:**
+🗑️ !filter delete <incoming message> – Delete a filter.
 
-* **Custom Filters:** Create automated responses to specific keywords or regular expressions.
-* **Alive Check:** Confirm the bot is online and responsive.
-* **Work Type (Public/Private):** Configure the bot to respond to all users or only authorized users.
-* **Sudo Users:** Grant elevated permissions to specific users.
-* **Blacklist:** Block specific groups from using the bot.
-* **Menu:** View the available commands and their usage.
-* **Edit Configurations:** Customize welcome, goodbye, and alive messages directly within WhatsApp.
-* **Auto-Updater:** Stay up-to-date with the latest features and improvements.
+📜 !filter – List all filters in the chat.
 
+⚙️ !filter <on|off> – Enable or disable filters.
 
-## Installation
+✅ !alive – Check if Farooq Bot is online.
 
-These instructions assume you have Node.js (version 16 or higher) and npm (or yarn) installed.
+🛠️ !worktype <public|private> – Set bot to public or private mode (sudo only).
 
-1. **Clone the repository:**
+👑 !sudo add <number> – Add a sudo user.
 
-   ```bash
-   git clone https://github.com/phaticusthiccy/PrimonProto.git
-   cd PrimonProto
-   ```
+❌ !sudo delete <number> – Remove a sudo user.
 
-2. **Install dependencies:**
+🚫 !blacklist – Add/remove group from blacklist (sudo only).
 
-   ```bash
-   npm install
-   ```
+📋 !menu – Display all commands.
 
-3. **Generate QR Code and Authenticate:**
+✍️ !edit <alive|welcome|goodbye> – Edit messages (sudo only).
 
-   ```bash
-   node qr.js
-   ```
+🔄 !update – Check for bot updates.
 
-   Follow the on-screen prompts to scan the QR code with your WhatsApp account. This step is only required for the initial setup.
+⬆️ !update now – Update Farooq Bot to the latest version.
 
-4. **Start the bot:**
+🔌 !plugin <query> – Search for plugins.
 
-   ```bash
-   pm2 start main.js
-   ```
+⭐ !plugin top – Show top plugins.
 
-   This will run the bot in the background using pm2.
+➕ !pinstall <plugin_id> – Install a plugin.
 
-##  Management Commands (Using PM2)
+🗑️ !pldelete <plugin_id> – Delete a plugin.
 
-* **View Logs:** `pm2 logs`  (Useful for debugging)
-* **Kill (Force Stop):** `pm2 kill`
+⏱️ !ping – Check bot’s response time.
 
-## Usage
+⚙️ Configuration
 
-PrimonProto uses handlers to trigger commands.  The default handlers are ".", "/", and "!".  You can customize these in the `database.json` file.  For example, to use the "!alive" command, send "!alive" in a WhatsApp chat where the bot is present.
+Farooq Bot’s settings are in database.json and can be customized:
 
-**Command List:**  Use `!menu` (or your chosen handler + "menu") to see a complete list of available commands and their descriptions within WhatsApp.  You can also use `!menu <command>` to get specific help for a single command.
+🏷️ Command Handlers: Prefixes for commands.
 
-**All Commands:**
+💬 Alive Message: Message shown with !alive.
 
-**Media & Entertainment:**
+👋 Welcome/Goodbye Messages: Sent when users join/leave groups.
 
-* `!insta <instagram_url>` - Downloads Instagram media.
-* `!tiktok <tiktok_url>` - Downloads TikTok videos.
-* `!video <query or url>` - Downloads YouTube videos.
-* `!music <query or url>` - Downloads YouTube music.
-* `!lyrics <song name>` - Fetches song lyrics.
-* `!sticker` (reply to an image or sticker) - Converts images to stickers or stickers to images.
-* `!show` (reply to a view once message) - Reveals view once messages.
+👑 Sudo Users: Phone numbers with country code for sudo access.
 
+🔒 Work Type: Public or private access mode.
 
-**Group Administration:**
+💻 Installation on Termux
+1️⃣ Update Termux & Install Dependencies
+pkg update && pkg upgrade -y
+pkg install git nodejs ffmpeg imagemagick yarn -y
 
-* `!add <number>` - Adds a user to the group.
-* `!ban <number or reply>` - Bans a user from the group.
-* `!promote <number or reply>` - Promotes a user to admin.
-* `!demote <number or reply>` - Demotes a user from admin.
-* `!mute <duration(optional)>` - Mutes the group. Provide duration like `!mute 1h` for 1 hour.
-* `!unmute` - Unmutes the group.
-* `!tagall <message(optional)>` - Tags all group members.  If you provide a message, it will be included after the tags.
-* `!tagadmin <message(optional)>` - Tags all group admins. If you provide a message, it will be included after the tags.
-* `!gmute` (reply to a user) - Globally mutes a user in all groups the bot is present.
-* `!ungmute` (reply to a user) - Globally unmutes a user.
+2️⃣ Clone Farooq Bot Repository
+git clone https://github.com/YourUsername/Farooq-Bot.git
+cd Farooq-Bot
+
+3️⃣ Install Node.js Packages
+yarn
+# or
+npm install
+
+4️⃣ Configure Bot
+
+Open database.json and set:
+
+Sudo numbers
+
+Welcome/Goodbye messages
+
+Command prefixes
+
+Work type (public/private)
+
+5️⃣ Start the Bot
+node index.js
 
 
-**Automation & Utilities:**
+🎉 Farooq Bot is now running!
 
-* `!filter add <incoming message> <outgoing message>` - Adds a new filter.
-* `!filter delete <incoming message>` - Deletes a filter.
-* `!filter` - Lists all filters in the current chat.
-* `!filter <on|off>` Enables or disables filters in the current chat.
-* `!alive` - Checks if the bot is alive.
-* `!worktype <public or private>` - Changes the bot's work type (sudo only).
-* `!sudo add <number>` - Adds a user to the sudo list (sudo only).
-* `!sudo delete <number>` - Removes a user from the sudo list (sudo only).
-* `!blacklist` - Adds or removes the current group to/from the blacklist (sudo only).
-* `!menu` - Displays the command menu.
-* `!edit <alive|welcome|goodbye>` (reply to a message) - Edits welcome/goodbye messages or alive message (sudo only).
-* `!update` - Checks for bot updates (sudo only).
-* `!update now` - Updates the bot to the latest version (sudo only).
-* `!plugin <query>` - Searches for plugins.
-* `!plugin top` - Shows top plugins.
-* `!pinstall <plugin_id>` - Installs a plugin (sudo only).
-* `!pldelete <plugin_id>` - Deletes a plugin (sudo only).
-* `!ping` - Checks the bot's response time.
+📜 Logs
 
-## Configuration
+Real-time logs: Run node index.js to see commands and errors in Termux.
 
-The `database.json` file stores the bot's configuration.  You can edit this file to customize various settings, including:
+Save logs to a file:
 
-* **Handlers:**  The prefixes used to trigger commands.
-* **Alive Message:** The message displayed when the `!alive` command is used.
-* **Welcome/Goodbye Messages:**  Messages sent when users join or leave a group.
-* **Sudo Users:**  Phone numbers (with country code) of users with sudo access.
-* **Work Type:** Set to "public" or "private" to control who can use the bot.
+node index.js >> farooqbot.log 2>&1
 
 
-## Contributing
+Tips:
 
-Contributions are welcome! Fork the repository, make your changes, and submit a pull request.
+tail -f farooqbot.log to watch logs live.
+
+Check logs if the bot crashes or commands fail.
+
+🔧 Tips & Tricks (24/7 Running)
+
+Keep Farooq Bot running 24/7 in Termux:
+
+🔋 Prevent Sleep
+termux-wake-lock
+
+🔄 Auto-Restart with pm2
+npm install pm2 -g
+pm2 start index.js --name FarooqBot
+pm2 save
 
 
-## License
+Check status: pm2 status
 
-MIT License. See the [LICENSE](LICENSE) file for details.
+View logs: pm2 logs FarooqBot
+
+📲 Auto Start on Termux Boot
+
+Add to ~/.termux/boot.sh:
+
+pm2 resurrect
+
+
+(Requires Termux:Boot app from Play Store)
+
+🤝 Contributing
+
+Contributions are welcome!
+
+Fork the repository.
+
+Make changes.
+
+Submit a pull request.
+
+💪 Let’s make Farooq Bot even better together!
+
+📄 License
+
+MIT License. See the LICENSE
+ file for details.
